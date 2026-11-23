@@ -27,7 +27,7 @@ COPY . /parca-agent
 RUN make build
 
 # Equivalent of docker.io/debian:bullseye-slim on 06.01.2022
-FROM docker.io/debian@sha256:96e65f809d753e35c54b7ba33e59d92e53acc8eb8b57bf1ccece73b99700b3b0 as all
+FROM docker.io/debian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6 as all
 COPY --from=build /etc/nsswitch.conf /etc/nsswitch.conf
 COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 COPY --from=build /usr/share/zoneinfo /usr/share/zoneinfo
