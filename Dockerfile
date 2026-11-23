@@ -1,5 +1,5 @@
 # Equivalent of docker.io/golang:1.17.5-bullseye on 06.01.2022
-FROM docker.io/golang@sha256:90fb73aa50a20c85ecfaf619002dceeabff306ae19beec149e6be39928ee7f2d as build
+FROM docker.io/golang@sha256:205c7636d74e0ffbe3d007162df7d74f859f5a8c8322dfb9f907977686c126cf as build
 
 # For more information about the snapshots, see: https://snapshot.debian.org/
 RUN echo "\
